@@ -3,7 +3,7 @@
 
 <Head>
     <meta charset="utf-8">
-    <title>Cadastro</title>
+    <title>Sistema de Cadastro</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 

@@ -2,9 +2,9 @@
 require_once 'db_connect.php';
 
 if(isset($_POST['btn-cadastrar'])):
-    $nomefantasia = mysqli_escape_string($connect, $_POST['nomefantasia']);
-    $razaosocial = mysqli_escape_string($connect, $_POST['razaosocial']);
-    $cnpj = mysqli_escape_string($connect, $_POST['cnpj']);
+    $nome = mysqli_escape_string($connect, $_POST['nome']);
+    $sobrenome = mysqli_escape_string($connect, $_POST['sobrenome']);
+    $cpf = mysqli_escape_string($connect, $_POST['cpf']);
     $pais = mysqli_escape_string($connect, $_POST['pais']);
     $uf = mysqli_escape_string($connect, $_POST['uf']);
     $cep = mysqli_escape_string($connect, $_POST['cep']);
@@ -12,9 +12,9 @@ if(isset($_POST['btn-cadastrar'])):
     $rua = mysqli_escape_string($connect, $_POST['rua']);
     $numero = mysqli_escape_string($connect, $_POST['numero']);
 
-    $sql = "INSERT INTO clientejuridico(nomefantasia, razaosocial, cnpj, pais, uf, cep, cidade,
+    $sql = "INSERT INTO clientefisico(nome, sobrenome, cpf, pais, uf, cep, cidade,
     rua, numero) 
-    VALUES ('$nomefantasia', '$razaosocial', '$cnpj', '$pais', '$uf', '$cep', '$cidade',
+    VALUES ('$nomefantasia', '$sobrenome', '$cpf', '$pais', '$uf', '$cep', '$cidade',
     '$rua', '$numero')";
     
     if(mysqli_query($connect, $sql)):

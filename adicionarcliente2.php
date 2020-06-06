@@ -5,38 +5,25 @@ include_once 'includes/header.php';
 
 <div class="row">
 	<div class="col s12 m6 push-m1 ">
-        <h3 class="light">Novo Cliente Jurídico</h3>
-        <form action="phpaction/createclientjuridico.php" method="POST">
+        <h3 class="light">Novo Cliente</h3>
+        <form action="phpaction/createclientfisico.php" method="POST">
             
             <div class="input-field col s12">
-                <input type="text" name="nomefantasia" id="nomefantasia">
-                <label for="nomefantasia">Nome Fantasia</label>
+                <input type="text" name="nome" id="nome">
+                <label for="nome">Nome</label>
             </div>
             <div class="input-field col s12">
-                <input type="text" name="razaosocial" id="razaosocial">
-                <label for="razaosocial">Razão Social</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+                <label for="sobrenome">Sobrenome</label>
             </div>
-            <!-- Não tive tempo para fazer o filtro pelo radio, por isso criei a página anterior -->
-            <!-- <p>
-                <label>
-                    <input class="with-gap" name="tipocliente" type="radio" id="fisico" checked />
-                    <span>Pessoa Física</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class="with-gap" name="tipocliente" type="radio" id="juridico"/>
-                    <span>Pessoa Jurídica</span>
-                </label>
-            </p> -->
-            <!-- <div class="input-field col s12">
+            <div class="input-field col s12">
                 <input type="text"  name="cpf" id="cpf">
                 <label for="cpf">CPF</label>
-            </div> -->
-            <div class="input-field col s12">
+            </div>
+            <!-- <div class="input-field col s12">
                 <input type="text"  name="cnpj" id="cnpj">
                 <label for="cnpj">CNPJ</label>
-            </div>
+            </div> -->
             <div class="input-field col s12">
                 <input type="text"  name="pais" id="pais">
                 <label for="pais">País</label>

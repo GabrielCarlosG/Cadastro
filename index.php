@@ -7,10 +7,10 @@ include_once 'includes/header.php';
 		<h3 class="light">Sistema de Cadastro e consulta</h3><br>
 	</div>
 	<div class=" col s10  push-m2">
-		<a href="adicionarcliente.php" class="btn-large"><i class="material-icons">person_add</i> Cadastrar clientes</a>
-		<a href="cadastrarproduto.php" class="btn-large"> <i class="material-icons">add</i> cadastrar produtos</a>
-		<a href="" class="btn-large"> <i class="material-icons">list</i> listar clientes</a>
-		<a href="" class="btn-large"> <i class="material-icons">list</i>  listar produtos</a>
+		<a href="tipocliente.php" class="btn-large"><i class="material-icons left">person_add</i> Cadastrar clientes</a>
+		<a href="cadastrarproduto.php" class="btn-large"> <i class="material-icons left">add</i> cadastrar produtos</a>
+		<a href="consultartipocliente.php" class="btn-large"> <i class="material-icons left">list</i> listar clientes</a>
+		<a href="" class="btn-large"> <i class="material-icons left">list</i>  listar produtos</a>
 		</div>
 	</div>
 </div>
