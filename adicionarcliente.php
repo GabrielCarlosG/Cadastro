@@ -6,7 +6,7 @@ include_once 'includes/header.php';
 <div class="row">
 	<div class="col s12 m6 push-m1 ">
         <h3 class="light">Novo Cliente</h3>
-        <form action="" method="post">
+        <form action="phpaction/createclientjuridico.php" method="post">
             <div class="input-field col s12">
                 <input type="text" name="nomefantasia" id="nomefantasia">
                 <label for="nomefantasia">Nome Fantasia</label>
@@ -40,6 +40,10 @@ include_once 'includes/header.php';
                 <label for="pais">País</label>
             </div>
             <div class="input-field col s12">
+                <input type="text"  name="cep" id="cep">
+                <label for="cep">CEP</label>
+            </div>
+            <div class="input-field col s12">
                 <input type="text"  name="uf" id="uf">
                 <label for="uf">UF</label>
             </div>
@@ -47,10 +51,18 @@ include_once 'includes/header.php';
                 <input type="text"  name="cidade" id="cidade">
                 <label for="cidade">Cidade</label>
             </div>
-            <a href="index.php" class="btn">Voltar
+            <div class="input-field col s12">
+                <input type="text"  name="rua" id="rua">
+                <label for="rua">Endereço</label>
+            </div>
+            <div class="input-field col s12">
+                <input type="text"  name="numero" id="numero">
+                <label for="numero">Número</label>
+            </div>
+            <a href="index.php" class="btn red">Voltar
            <i class="material-icons right">undo</i>
            </a>
-            <button class="btn waves-effect waves-light" type="submit" name="action">cadastrar
+            <button class="btn waves-effect waves-light green" name="btn-cadastrar" type="submit" name="action">cadastrar
             <i class="material-icons right">send</i>
             </button>
         </form>

@@ -6,7 +6,7 @@ include_once 'includes/header.php';
 <div class="row">
 	<div class="col s12 m6 push-m1 ">
         <h3 class="light">Novo Produto</h3>
-        <form action="" method="post">
+        <form action="phpaction/createproduct.php" method="post">
             <div class="input-field col s12">
                 <input type="text" name="codigoestoque" id="codigoestoque">
                 <label for="codigoestoque">Código de Controle do Estoque</label>
@@ -27,9 +27,9 @@ include_once 'includes/header.php';
                 <input type="number" name="precovenda" id="precovenda">
                 <label for="precovenda">preço da venda</label>
             </div>
-            <a href="index.php" class="btn">Voltar
+            <a href="index.php" class="btn red">Voltar
            <i class="material-icons right">undo</i></a>
-            <button class="btn waves-effect waves-light" type="submit" name="action">cadastrar
+            <button class="btn waves-effect waves-light green" type="submit" name="action">cadastrar
             <i class="material-icons right">send</i>
             </button> 
         </form>
